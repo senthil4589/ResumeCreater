@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/upload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible">
+
+        <com.apnatime.resume.utils.MyTextView
+            android:id="@+id/add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:text="Add Photo"
+            android:textColor="@color/blue2"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/add_photo"
+            android:alpha="0.2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/gallery_image" />
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/gallery_image"
+            android:alpha="0.5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/black_camera_icon" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/qa_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/close_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/delete"
+            android:visibility="visible" />
+
+        <com.apnatime.resume.utils.ResizableImageView
+            android:id="@+id/qa_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_image"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+</LinearLayout>

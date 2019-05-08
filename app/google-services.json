@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "534287760204",
+    "firebase_url": "https://resumecreater-aec4d.firebaseio.com",
+    "project_id": "resumecreater-aec4d",
+    "storage_bucket": "resumecreater-aec4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534287760204:android:718fd53d84770d47",
+        "android_client_info": {
+          "package_name": "com.apnatime.resume"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534287760204-8dsa1rvv51aunvtr53usr5pp61nmt9qt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apnatime.resume",
+            "certificate_hash": "08fd7a1956210761be4f2b6516b3b2377cf097e5"
+          }
+        },
+        {
+          "client_id": "534287760204-1u57u5fg215mg082rd7m5h3clbujrusg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuQs1IEjOLzuqlVR8SOIoTMK7KOd7mXZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534287760204-1u57u5fg215mg082rd7m5h3clbujrusg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.GetUserInfoActivity"
+
+    tools:showIn="@layout/activity_get_user_info">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="15dp">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/name_email_bg"
+        android:hint="Your Name"
+        android:padding="8dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <RelativeLayout
+        android:id="@+id/birthday_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name">
+    <EditText
+        android:id="@+id/birth_day_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/name_email_bg"
+        android:hint="Choose Your Birthday"
+        android:padding="8dp"
+        android:clickable="false"
+        android:inputType="textCapWords|date"
+        android:layout_toLeftOf="@+id/date_picker_image"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+
+    </EditText>
+    <ImageView
+        android:id="@+id/date_picker_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/date_picker" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/birthday_lay"
+        android:background="@drawable/name_email_bg"
+        android:hint="Your Address"
+        android:padding="8dp"
+        android:minHeight="40dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/years_of_exp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/address"
+        android:background="@drawable/name_email_bg"
+        android:hint="Years of Experience"
+        android:padding="8dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/domain_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/years_of_exp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_bg"
+        android:spinnerMode="dropdown" />
+    <include
+        android:id="@+id/upload_media_layout"
+        layout="@layout/upload_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/domain_spinner" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!--<DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        />
+-->
+
+
+</RelativeLayout>
+</ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/resend_otp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/blue_btn"
+            android:gravity="center"
+            android:inputType="textCapWords"
+            android:text="Create"
+            android:textColor="@color/white" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
